@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Page</title>
+  <!-- 引入 Vue 3 UMD 版本 -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.2.47/dist/vue.global.prod.js"></script>
+  <!-- 引入公共组件文件 -->
+    <script src="./components/public-components.js"></script>
+  <style>
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+    }
+
+    nav li {
+      margin-right: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+    }
+
+    nav .active a {
+      color: red; /* 高亮当前菜单项 */
+    }
+  </style>
+</head>
+<body>
+
+  <div id="app">
+    <!-- 使用全局菜单组件 -->
+    <menu-component></menu-component>
+
+    <h1>About Page</h1>
+    <p>Learn more about us here.</p>
+  </div>
+
+  <script>
+    // 创建 Vue 实例并挂载到页面
+    createApp(MenuComponent).mount('#app');
+  </script>
+
+</body>
+</html>
