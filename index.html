@@ -1,60 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/tools.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vue 3 UMD Global Menu</title>
-    <!-- 引入 Vue 3 UMD 版本 -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.47/dist/vue.global.prod.js"></script>
-    <!-- 引入公共组件文件 -->
-    <script src="./components/public-components.js"></script>
-    <!-- Import component library -->
-    <script src="https://unpkg.com/naive-ui@2.40.1/dist/index.prod.js"></script>
-    <style>
-      /* 样式 */
-      nav ul {
-        list-style-type: none;
-        padding: 0;
-        display: flex;
-      }
-
-      nav li {
-        margin-right: 20px;
-      }
-
-      nav a {
-        text-decoration: none;
-        color: black;
-      }
-
-      nav .active a {
-        color: red; /* 高亮当前菜单项 */
-      }
-    </style>
+    <title>在线工具站</title>
+    <script type="module" crossorigin src="/assets/index-BRDrVolP.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DrvsDhdZ.css">
   </head>
   <body>
-    <div id="app">
-      <!-- 使用全局菜单组件 -->
-      <menu-component></menu-component>
-      <n-button>{{ message }}</n-button>
-      <h1>Home Page</h1>
-      <p>Welcome to the homepage!</p>
-    </div>
-
-    <script>
-      // 引入 Vue 和 Element Plus 的 API
-      const { createApp } = Vue;
-      // 创建 Vue 应用
-      const app = createApp({
-        setup() {
-          return {
-            message: "naive",
-          };
-        },
-      });
-      app.component('menu-component', MenuComponent);
-      app.use(naive);
-      app.mount("#app");
-    </script>
+    <div id="app"></div>
   </body>
 </html>
